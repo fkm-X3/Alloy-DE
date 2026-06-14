@@ -1,0 +1,10 @@
+build/
+6.8.*/
+CMakeUserPresets.json
+*.user
+*.pro.user*
+moc_*
+qrc_*
+*.o
+*.obj
+*.exe

@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>AlloyDE/main.qml</file>
+        <file>AlloyDE/Desktop.qml</file>
+        <file>AlloyDE/Panel.qml</file>
+        <file>AlloyDE/AppLauncher.qml</file>
+    </qresource>
+</RCC>
