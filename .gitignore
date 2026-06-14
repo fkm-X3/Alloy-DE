@@ -8,3 +8,4 @@ qrc_*
 *.o
 *.obj
 *.exe
+makefile
