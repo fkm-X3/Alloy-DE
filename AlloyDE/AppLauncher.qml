@@ -2,7 +2,10 @@ import QtQuick
 import QtQuick.Controls
 
 Rectangle {
+    id: appLauncherRoot
     color: Qt.rgba(0, 0, 0, 0.85)
+
+    signal appLaunched(string name)
 
     MouseArea {
         anchors.fill: parent
@@ -46,7 +49,10 @@ Rectangle {
 
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: launcher.visible = false
+                            onClicked: {
+                                appLauncherRoot.visible = false
+                                appLauncherRoot.appLaunched(modelData.name)
+                            }
                         }
                     }
 

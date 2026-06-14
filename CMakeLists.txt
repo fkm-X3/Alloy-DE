@@ -3,11 +3,13 @@ project(AlloyDE VERSION 0.1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick Qml)
 
 qt_add_executable(AlloyDE
     src/main.cpp
+    src/TerminalProcess.cpp
 )
 
 qt_add_resources(AlloyDE app_resources
@@ -17,6 +19,7 @@ qt_add_resources(AlloyDE app_resources
         AlloyDE/Desktop.qml
         AlloyDE/Panel.qml
         AlloyDE/AppLauncher.qml
+        AlloyDE/Terminal.qml
 )
 
 target_link_libraries(AlloyDE PRIVATE Qt6::Quick Qt6::Qml)

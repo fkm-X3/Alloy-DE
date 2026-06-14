@@ -23,6 +23,27 @@ Window {
         id: launcher
         anchors.fill: parent
         visible: false
+
+        onAppLaunched: function(name) {
+            if (name === "Terminal")
+                terminal.visible = true
+        }
+    }
+
+    Terminal {
+        id: terminal
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            bottom: panel.top
+            margins: 16
+        }
+        visible: false
+
+        onClosed: {
+            launcher.visible = false
+        }
     }
 
     Shortcut {
