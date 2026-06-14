@@ -8,18 +8,6 @@ A lightweight desktop environment for Alloy-OS, built with C++ and Qt6 QML.
 - **CMake 3.16+**
 - **MSVC 2022** (Visual Studio Build Tools)
 
-## Build
-
-```powershell
-cmake -B build -DCMAKE_PREFIX_PATH="C:\Users\Fkm\Qt\6.8.3\msvc2022_64" -DCMAKE_BUILD_TYPE=Release
-cmake --build build --config Release
-```
-
-## Run
-
-```powershell
-.\build\Release\AlloyDE.exe
-```
 
 ## Controls
 
